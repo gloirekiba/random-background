@@ -1,0 +1,82 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  cursor: crosshair;
+  transition: background-color 1s;
+}
+
+/* 
+* Wave styling (pulse animation)
+*/
+.wave {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+}
+
+/* 
+* Hint styling
+*/
+.hint {
+  position: absolute;
+  right: 1em;
+  bottom: 1em;
+  width: 100%;
+  max-width: 300px;
+  padding: 1em;
+  font-size: 1.6rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 8px;
+  background-color: #fff;
+  user-select: none;
+}
+
+.hint__text {
+  color: #333;
+  margin-bottom: 1em;
+}
+
+.hint__hex,
+.hint__rgb {
+  color: rebeccapurple;
+}
+
+.hint__hex::before {
+  content: "hex: ";
+}
+
+.hint__rgb::before {
+  content: "rgb: ";
+}
+
+.hint__hex::before,
+.hint__rgb::before {
+  color: red;
+  font-weight: 500;
+}
+
+/* 
+* @Keyframes animation
+*/
+@keyframes pulse {
+  to {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
