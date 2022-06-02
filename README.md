@@ -8,7 +8,7 @@ A random background color is generated for each time you click anywhere on the p
 * JavaScript
 
 # Live website can be viewed here
-## [Live preview](https://gloirekiba.github.io/random-background-color/)
+## [Live preview](https://gloirekiba.github.io/random-background)
 
 ## Screenshots
 
